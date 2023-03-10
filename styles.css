@@ -1,0 +1,104 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 0.2fr 0.1fr 0.1fr 9fr;
+    background-color: black;
+}
+
+.header {
+
+    background-color: white;
+}
+
+.sidebar {
+ grid-row-start: 1;
+ grid-row-end: 5;
+ background-color: royalblue;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+}
+
+.titles {
+    gap: 200px;
+    background-color: grey;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.content {
+    background-color: grey;
+grid-column-start: 2;
+grid-column-end: 2;
+grid-row-start: 4;
+grid-row-end: 4;
+
+ background-color: gray;
+ display: grid;
+ grid-template-columns: 2fr 2fr 1fr;
+ grid-template-rows: 1fr 1fr 1fr;
+}
+
+.projects {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.rightpanel {
+    grid-column-start: 3;
+    grid-column-end: 3;
+
+}
+
+.card {
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: white;
+border-radius: 10px;
+padding: 10px;
+margin-top: 30px;
+margin-bottom: 30px;
+margin-left: 10px;
+margin-right: 10px;
+
+}
+
+li {
+ margin-bottom: 25px;
+ color: white;
+}
+
+
+
+.announcement {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 100px;
+    margin: 20px;
+}
+
+.trending {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+}
+
+button {
+    border-radius: 10px;
+    background-color: royalblue;
+    color: white;
+    padding: 10px;
+}

@@ -1,82 +1,93 @@
 .container {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 0.2fr 0.1fr 0.1fr 9fr;
-    background-color: black;
+    grid-template-rows: 0.1fr 0.1fr 5fr;
+    background-color: #e9d5ff;
 }
 
 .header {
-
+    display: grid;
+    grid-template-columns: 0.1fr 2fr 1fr 0.5fr;
     background-color: white;
+    padding: 10px;
+    gap: 10px;
 }
 
 .sidebar {
  grid-row-start: 1;
  grid-row-end: 5;
- background-color: royalblue;
+ background-color: #e9d5ff ;
+ display: grid;
+ grid-template-columns: 0.5fr 2fr;
+ grid-template-rows: 0.5fr 5fr;
+ padding: 20px;
+ margin-bottom: 900px;
 }
 
 .banner {
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr 1fr 1fr;
+    gap: 20px;
     justify-content: space-around;
     background-color: white;
+    padding: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
-.titles {
-    gap: 200px;
-    background-color: grey;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr;
-}
+
 
 .content {
-    background-color: grey;
+background-color: #d8b4fe;
 grid-column-start: 2;
 grid-column-end: 2;
-grid-row-start: 4;
-grid-row-end: 4;
+grid-row-start: 3;
+grid-row-end: 3;
 
- background-color: gray;
+ background-color: #d8b4fe;
  display: grid;
- grid-template-columns: 2fr 2fr 1fr;
- grid-template-rows: 1fr 1fr 1fr;
+ grid-template-columns:  3fr 1fr;
+ grid-template-rows: 0.5fr 1fr;
 }
 
-.projects {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 3;
+
+
+.project{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    margin: 20px;
+    margin-top: 0px;
 }
 
 .rightpanel {
-    grid-column-start: 3;
+    grid-column-start: 2;
     grid-column-end: 3;
-
 }
 
 .card {
-display: flex;
-justify-content: center;
-align-items: center;
+
 background-color: white;
 border-radius: 10px;
 padding: 10px;
-margin-top: 30px;
-margin-bottom: 30px;
+margin-top: 20px;
+margin-bottom: 20px;
 margin-left: 10px;
 margin-right: 10px;
+border-left: #9333ea 8px solid;
 
 }
 
 li {
+margin-top: 0px;
  margin-bottom: 25px;
  color: white;
+}
+
+.announcements {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+
 }
 
 
@@ -87,6 +98,7 @@ li {
     padding: 10px;
     margin-bottom: 100px;
     margin: 20px;
+    padding-left: 20px;
 }
 
 .trending {
@@ -94,11 +106,122 @@ li {
     border-radius: 10px;
     padding: 10px;
     margin: 20px;
+    padding-left: 20px;
 }
 
 button {
-    border-radius: 10px;
-    background-color: royalblue;
+    border-radius: 40px;
+    background-color: #9333ea;
     color: white;
-    padding: 10px;
+    width: 100px;
+    text-align: center;
+}
+
+.nav {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    list-style-type: none;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    
+}
+
+img {
+    max-height: 30px;
+    display: flex;
+    align-self: center;
+}
+
+.plane {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.fullNav {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr ;
+    padding: 40px;
+    
+}
+
+.icons {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.link {
+    display: flex;
+    align-self: center;
+}
+
+.plane {
+    display: flex;
+    align-self: center;
+}
+
+.headings {
+    display: flex;
+    align-self: center;
+    justify-self: flex-end;
+}
+
+.headingAccount {
+    display: flex;
+    justify-self: flex-end;
+}
+
+.headingName {
+    display: flex;
+    justify-self: flex-start;
+    align-self: center;
+}
+
+.headingSearch {
+    display: flex;
+    align-self: center;
+    justify-self: flex-start;
+    width: 500px;
+    border-radius: 25px;
+    background-color: #e9d5ff;
+}
+
+.bannerbutt {
+   max-height: 30px;
+   margin-top: 10px;
+}
+
+.title {
+    text-align: center;
+}
+
+.body{
+    min-height: 100vh;
+  margin: 0px;
+  padding: 0px;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.contentHeader {
+    margin: 10px;
+    margin-left: 32px;
+    
 }
